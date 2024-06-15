@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main w-full h-screen  flex items-center justify-center relative">
+        <button class="bg-teal-400 text-white px-5 py-1 rounded-full open">Open</button>
+
+
+        <!-- modal-div -->
+         <div class="modal-main bg-black/[0.2] w-full h-screen hidden absolute" >
+            
+
+            
+         </div>
+
+         <!-- modal-cont -->
+         <div class="modal-sec hidden w-[70vw] h-[90vh] bg-white overflow-hidden shadow-md rounded-xl absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-[100%] flex flex-col items-center gap-5">
+                
+            <i class="close ri-close-fill absolute top-[2%] right-[2%] text-3xl"></i>
+
+            <!-- input-starts -->
+            <div class="input-fields w-full h-[60%] bg-[#8576FF] flex flex-col justify-center items-center gap-2">
+
+                <div class="name-inps flex flex-col items-start w-[30%]">
+                    <label for="Name" class="text-[#1C1678] mb-1 text-[0.8rem]">Name</label>
+                    <input class="w-full px-2 rounded-md" id="Name" type="text" placeholder="Name">
+                </div>
+
+
+            <div class="number-inps flex flex-col items-start w-[30%]">
+                <label for="Number" class="text-[#1C1678] mb-1 text-[0.8rem]">Number</label>
+            <input class="w-full px-2 rounded-md"  id="Number"  type="number" placeholder="Number">
+            </div>
+
+            <div class="email-inps flex flex-col items-start w-[30%]">
+                <label for="email" class="text-[#1C1678] mb-1 text-[0.8rem]">Email</label>
+            <input class="w-full px-2 rounded-md" id="email" type="email" placeholder="Email">
+            </div>
+
+
+            <div class="category-inps flex flex-col items-start w-[30%]">
+                <label for="Category" class="text-[#1C1678] mb-1 text-[0.8rem]">Category</label>
+                <select class="w-full px-2 rounded-md" id="Category" name="Category">
+                <option value="Students" id="opt1">Students</option>
+                <option value="Teachers" id="opt2">Teachers</option>
+                <option value="Staffs" id="opt3">Staffs</option>
+                <option value="Judges" id="opt4">Judges</option>
+                </select>
+            </div>
+
+            <div class="btn-div w-[30%] flex items-center justify-end">
+                <button class="submit bg-[#1C1678] text-white px-3 py-1 rounded-xl mt-5 ">Submit</button>
+            </div>
+            </div>
+
+            <!-- input-div-ends -->
+
+            <!-- ticket-starts -->
+             <div class="ticket hidden w-[80%] h-[30%] rounded-xl  px-5 py-2">
+                <h1 class=" text-2xl font-bold text-[#1C1678] uppercase"><span class="pass-title">Student</span> Pass</h1>
+
+                <div class="ticket-content flex">
+                    <div class="left w-[50%]">
+                        <h2 class="name-con text-md">Name</h2>
+                        <h2 class="number-con text-md">Number</h2>
+                        <h2 class="email-con text-md">Email</h2>
+                    </div>
+
+                    <div class="right w-[50%]  flex flex-col items-end">
+                        <h3 class="text-[2rem] price">$200</h3>
+                        <button class="bg-[#8576FF] text-white px-3 py-1 rounded-xl mt-2">Buy Now</button>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
